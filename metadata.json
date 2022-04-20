@@ -7,7 +7,12 @@
   "source": "https://github.com/saz/puppet-timezone",
   "project_page": "https://github.com/saz/puppet-timezone",
   "issues_url": "https://github.com/saz/puppet-timezone/issues",
-  "description": "Manage timezone settings via Puppet",
+  "dependencies": [
+    {
+      "name": "stm/debconf",
+      "version_requirement": ">= 2.0.0 < 5.0.0"
+    }
+  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "Ubuntu"
@@ -55,12 +60,10 @@
       "version_requirement": ">= 6.0.0 < 8.0.0"
     }
   ],
-  "dependencies": [
-    {
-      "name": "stm/debconf",
-      "version_requirement": ">= 2.0.0 < 5.0.0"
-    }
-  ],
   "tags": [
-  ]
+    "timezone"
+  ],
+  "pdk-version": "2.4.0",
+  "template-url": "pdk-default#2.4.0",
+  "template-ref": "tags/2.4.0-0-gfa6b6d2"
 }
